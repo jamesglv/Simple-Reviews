@@ -3,34 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Reviews</title>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="/fontawesome/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Gayathri' rel='stylesheet'>
 </head>
 <body>
     <p class="heading">A basic testimonials app using vanilla JS, HTML and CSS</p>
-    <div class="reviewContainer">
-        <span class="circle"></span>
-        <img src="/avatars/blueman.png" class="avatar1" id="avatar">
-        <span class="quotes">
-            <div class="quotationmark">
-                <i class="fas fa-quote-right"></i>
-            </div>
-        </span>
-        <div class="reviewText">
-            <p class="name" id="name">John Citizen</p>
-            <p class="job" id="job">Frontend Developer</p>
-            <p class="review" id="review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."</p>
-            <div class="buttons">
-                <div id="leftBtn">
-                    <i class="fas fa-chevron-left"></i>
+    <div class="container">
+        <div class="reviewContainer">
+            <span class="circle"></span>
+            <img src="/avatars/blueman.png" class="avatar1" id="avatar">
+            <span class="quotes">
+                <div class="quotationmark">
+                    <i class="fas fa-quote-right"></i>
                 </div>
-                <div id="rightBtn">
-                    <i class="fas fa-chevron-right"></i>
+            </span>
+            <div class="reviewText">
+                <p class="name" id="name">John Citizen</p>
+                <p class="job" id="job">Frontend Developer</p>
+                <p class="review" id="review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."</p>
+                <div class="buttons">
+                    <div id="leftBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div id="rightBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
                 </div>
+                
             </div>
-            
+        </div>
+        <div class="inputContainer">
+            <form class="inputForm">
+                <input id="submissionName" placeholder="Name" type="text">
+                <input id="submissionJob" placeholder="Your job description">
+                <textarea id="message" placeholder="Let us know how we did..."></textarea>
+                <button id="submitReview">Submit</button>
+                <p id="submitMessage"></p>
+            </form>
         </div>
     </div>
     <script src="app.js"></script>

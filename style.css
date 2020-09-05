@@ -3,11 +3,10 @@
     height: 400px;
     background-color: rgb(237, 237, 237);
     border-radius: 10px;
-    position: absolute;
+    position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 5px 5px 10px 5px rgb(194, 194, 194);
+    margin: 15px;
 
 }
 
@@ -98,4 +97,52 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2rem;
+}
+
+.inputContainer {
+    position: relative;
+    display: block;
+    top: 50%;
+    margin: 15px;
+    width: 350px;
+}
+
+#submitReview {
+    font-family: 'Gayathri';
+    font-size: 1rem;
+    vertical-align: middle;
+    padding-top: 11px;
+    padding-bottom: 5px;
+    display: flex;
+    margin-top: 5px;
+    background-color:rgb(237, 237, 237);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submissionName, #submissionJob, #message{
+    display: flex;
+    margin-bottom: 5px;
+    width: 100%;
+    font-family: 'Gayathri';
+    font-size: 1rem;
+    background-color: rgb(237, 237, 237);
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+#message{
+    height: 150px;
+}
+#submitMessage{
+    font-family: 'Gayathri';
+}
+.container{
+    width: auto;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
